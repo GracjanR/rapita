@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPITA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">RAPITA</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#process">Proces współpracy</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Twój Partner w Świecie Technologii Cyfrowych</h1>
+                    <p>Jestem programistą, specjalizującym się w dostarczaniu wysokiej jakości, niestandardowych rozwiązań webowych. Moim celem jest przekształcanie Twoich pomysłów w funkcjonalne i estetyczne aplikacje.</p>
+                    <div class="services-list">
+                        <h3>Oferuję usługi takie jak:</h3>
+                        <ul>
+                            <li><i class="fas fa-desktop"></i> Tworzenie responsywnych stron internetowych</li>
+                            <li><i class="fas fa-shopping-cart"></i> Budowa i optymalizacja sklepów internetowych (E-commerce)</li>
+                            <li><i class="fas fa-cogs"></i> Zarządzanie i utrzymanie aplikacji webowych</li>
+                            <li><i class="fas fa-exchange-alt"></i> Integracje systemów i API</li>
+                            <li><i class="fas fa-database"></i> Zarządzanie bazami danych</li>
+                            <li><i class="fas fa-lightbulb"></i> Konsultacje techniczne i doradztwo</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn primary-btn">Skontaktuj się ze mną</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="process" class="process-section">
+            <div class="container">
+                <h2>Jak Przebiega Nasza Współpraca?</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <i class="fas fa-comments"></i>
+                        <h3>1. Konsultacja i Analiza Potrzeb</h3>
+                        <p>Rozpoczynamy od dogłębnej rozmowy, aby poznać Twoje cele i wizję projektu. Analizujemy rynek i grupę docelową.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>2. Planowanie i Projektowanie (UI/UX)</h3>
+                        <p>Na podstawie zebranych informacji tworzymy szczegółowy plan, makietę i prototypy interfejsu użytkownika (UI/UX).</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-code"></i>
+                        <h3>3. Rozwój i Implementacja</h3>
+                        <p>Przystępujemy do kodowania, wykorzystując najnowsze technologie i sprawdzone praktyki programistyczne.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-flask"></i>
+                        <h3>4. Testowanie i Optymalizacja</h3>
+                        <p>Przeprowadzamy gruntowne testy funkcjonalności, wydajności i bezpieczeństwa. Optymalizujemy rozwiązanie.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-rocket"></i>
+                        <h3>5. Wdrożenie i Wsparcie</h3>
+                        <p>Po zatwierdzeniu projektu wdrażamy go i zapewniamy pełne wsparcie techniczne po uruchomieniu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Skontaktuj się ze mną</h2>
+                <p class="contact-intro">Masz pomysł na projekt lub potrzebujesz konsultacji? Napisz do mnie!</p>
+                <form action="https://formspree.io/f/myzjzzeq" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Imię i Nazwisko</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres E-mail</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Temat</label>
+                        <input type="text" id="subject" name="_subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Wyślij wiadomość</button>
+                </form>
+            
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gracjan Rapita. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
